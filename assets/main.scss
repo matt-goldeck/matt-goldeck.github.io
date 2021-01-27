@@ -1,0 +1,35 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+.landing-div {
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.landing-img {
+	max-width: 45%;
+	height: auto;
+	border-radius: 20px;
+}
+.landing-content {
+	padding: 40px;
+	justify-content: center;
+	text-align:center;
+}
+
+// site-wide 
+body {
+	background-color:aliceblue;
+}
+
+.footer-col-3 {
+	text-align: center;
+}
+
+.post-content img {
+	float: left;
+	max-width: 50%;
+	padding-right: 25px;
+}
