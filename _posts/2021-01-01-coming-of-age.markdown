@@ -17,7 +17,7 @@ To preface: I value building things, building them the right way, and I try to f
 
 I think somewhere in the tumult of my college years this became distorted into some self-righteous John Galt-esque mantra of "I must do everything myself for it is the only way", which if not obvious to you the reader, is probably not an adage to be applied to everything.
 
-As my time at university began to wind down and my ambitions wandered towards professional endeavors, I became obsessed with having a blog. Being an 'engineer's engineer' I had to do it 'the right way' -- it would have to be a big-iron PSQL backed, 'built with my own two hands', dynamic whirlwind of a blog that would knock any hiring managers socks off and prove to the world how cool I am.
+As my time at university began to wind down and my ambitions wandered towards professional endeavors, I became obsessed with having a blog. Being an 'engineer's engineer' I had to do it 'the right way' -- it would have to be a big-iron PSQL backed, 'built with my own two hands', dynamic whirlwind of a blog that would knock any hiring manager's socks off and prove to the world how cool I am.
 
 ![me, circa 2019](https://upload.wikimedia.org/wikipedia/commons/a/a1/Dore-I_watched_the_Water-Snakes-Detail.jpg)
 
