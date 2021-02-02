@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "New Blog, Who This? Or: A Coming of Age"
+title:  "New Blog, Who This?"
 date:   2021-01-01 12:00:00 -0500
 categories: ramble
 ---
@@ -19,7 +19,7 @@ I think somewhere in the tumult of my college years this became distorted into s
 
 As my time at university began to wind down and my ambitions wandered towards professional endeavors, I became obsessed with having a blog. Being an 'engineer's engineer' I had to do it 'the right way' -- it would have to be a big-iron PSQL backed, 'built with my own two hands', dynamic whirlwind of a blog that would knock any hiring manager's socks off and prove to the world how cool I am.
 
-![me, circa 2019](https://upload.wikimedia.org/wikipedia/commons/a/a1/Dore-I_watched_the_Water-Snakes-Detail.jpg)
+![me circa 2019](https://upload.wikimedia.org/wikipedia/commons/a/a1/Dore-I_watched_the_Water-Snakes-Detail.jpg#float-left)
 
 So I had hung this albatross around my neck: if I am to do something interesting, I would want to blog about it, and if I am to blog about it, I must make the blog myself.
 
@@ -36,7 +36,7 @@ And it was... just *okay*. Having finally accomplished what I thought so despera
 
 The next time Heroku and AWS hit my credit card, I just switched the site into maintenance mode and let it die. 
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/InstrumentShopsatNBS_011.jpg/1280px-InstrumentShopsatNBS_011.jpg)
+![me circa 2021](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/InstrumentShopsatNBS_011.jpg/1280px-InstrumentShopsatNBS_011.jpg#float-left)
 
 I forgot about it for a long time, but when the smoke cleared and I starting reflecting on where I'd gone wrong, I started looking at the blogs of those in tech that I admire, and it didn't take too long to figure it out.
 
