@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![me](/assets/matt.jpg)
+![me](/assets/matt.jpg#float-left)
 Matt Goldeck is a software engineer.
 
 He currently builds integrations for Funnel Leasing. He used to do this in New York City, but he does this remotely now.
