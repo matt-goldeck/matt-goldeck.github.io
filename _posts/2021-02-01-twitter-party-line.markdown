@@ -52,7 +52,7 @@ All the cool kids in college threw React at every problem, and at work a lot of 
  
 The ideal path should ideally be as follows:
  
-A primary component [PartyLine](https://github.com/matt-goldeck/avalanche/blob/master/src/PartyLine.js) is loaded and calls a function [bufferTweets()](https://github.com/matt-goldeck/avalanche/blob/master/src/PartyLine.js#L105) on `componentDidMount()`. A sub function `getTweets()` retrieves 250 random tweets from our FastAPI `/tweets` endpoint. After tweets have been retrieved, another sub function [listenForBufferToLoad()](https://github.com/matt-goldeck/avalanche/blob/master/src/PartyLine.js#L105) is called to keep an eye on the buffer to call [loadTweet()](https://github.com/matt-goldeck/avalanche/blob/master/src/PartyLine.js#L105) when the first tweet is loaded onto it. It does this because sometimes my free Heroku dyno takes 10-30 seconds to spin up, and thus, the promise chain of the standard fetch-then pattern will keep chugging on without any content retrieved. There's probably a more elegant solution to this, but as I said, I have no idea what I'm doing.
+A primary component [PartyLine](https://github.com/matt-goldeck/avalanche/blob/master/src/PartyLine.js) is loaded and calls a function [bufferTweets()](https://github.com/matt-goldeck/avalanche/blob/master/src/PartyLine.js#L105) on `componentDidMount()`. A sub function `getTweets()` retrieves 250 random tweets from our FastAPI `/tweets` endpoint. After tweets have been retrieved, another sub function [listenForBufferToLoad()](https://github.com/matt-goldeck/avalanche/blob/master/src/PartyLine.js#L105) is called to keep an eye on the buffer to call [loadTweet()](https://github.com/matt-goldeck/avalanche/blob/master/src/PartyLine.js#L105) when the first tweet is loaded onto it. It does this because sometimes my free Heroku dyno takes 10-30 seconds to spin up, and thus, the promise chain of the standard fetch-then pattern will keep chugging on without any content retrieved until it realizes there aren't any tweets loaded and explodes violently. There's probably a more elegant solution to this, but as I said, I have no idea what I'm doing.
  
 `loadTweet()` pops a random tweet from the buffer and plops it onto an array `loadedTweets`. After this, tweets are only loaded onto the `loadedTweet` array when a tweet's content is finished uttering -- but we'll get there soon.
  
@@ -68,37 +68,38 @@ The `Tweet` component displays the tweet's content and reads it aloud. It slowly
  
 At the turn of the last century, as cities in the United States became congested and squalid, politicians and city planners devised a fusion of politics, philosophy, and urban planning known as the [City Beautiful movement](https://en.wikipedia.org/wiki/City_Beautiful_movement). Its proponents argued that through building cities that were beautiful, pleasant to live in, and conductive to social harmony, we could shape the society that resides in them towards a more harmonious nature.
  
-Argue the efficacy of the movement all you want, but the base principles are provably true: you feel like a Greek god on a trip through Grand Central Terminal; you feel like a rat scurrying out of Penn Station.
+ ![chicago](https://upload.wikimedia.org/wikipedia/commons/b/b1/Delineator-_Jules_Guerin%3B_Architects-_Edward_Herbert_Bennett_and_Daniel_Hudson_Burnham_-_Plan_of_Chicago-_Civic_Center_-_Google_Art_Project.jpg#float-left)
+Argue its efficacy all you want, but the base principles are provably true: you feel like a Greek god on a trip through Grand Central Terminal; you feel like a rat scurrying out of Penn Station.
  
-So if we try to make our civic spaces beautiful and harmonious, why isn't the internet the same way?
- 
+So if we try to make our physical civic spaces beautiful and harmonious, why isn't the internet the same way?
+
+The internet has certainly become a civic space -- perhaps the most daring and all-encompassing civic space we've ever constructed. It's the fantastical downtown business district of all of humanity. Here we do our learning, shopping, working, and socializing, and as we spend time here and shape it, it too spends time with and shapes us. 
+
+And as we have taken very little care in shaping it, the internet is not a City Beautiful. The big picture of the mainstream internet is that of a raging, churning, violent cesspool -- and the shaping it's doing to us is not [of the harmonious type](https://en.wikipedia.org/wiki/2021_storming_of_the_United_States_Capitol).
+
 Let's play a game: pick a FAANG and append 'statistic' to the Google search:
 * Facebook now has somewhere around [2.7 billion monthly-active users](https://www.statista.com/statistics/264810/number-of-monthly-active-facebook-users-worldwide/).
 * Google handles upwards of [3.5 billion searches a day](https://www.internetlivestats.com/google-search-statistics/).
 * Netflix is fast approaching [200 million paying subscribers](https://www.comparitech.com/tv-streaming/netflix-subscribers/).
+
+
+![penn station 1910](https://upload.wikimedia.org/wikipedia/commons/a/ae/Penn_station.png#float-left)
+This is more traffic than Penn Station will see in [100 years at current levels](https://www.statista.com/statistics/552797/amtrak-ridership-leading-passenger-station/). Even more traffic than a [continental interstate system](https://www.fhwa.dot.gov/policyinformation/tables/02.cfm) could ever cope with. These are very serious, nigh science fiction-esque levels of usership the likes of which humanity has never grappled with -- and it doesn't seem like we're taking that too seriously.
+
+These aren't silly things. Very rapidly, without us realizing, these silly things became very impactful, very tangible, and very un-silly parts of every person's daily life.
+
+And yet the average trip to Facebook is *stressful* in the same way a trip through Penn Station is. Your closest friends and family are screaming at each other, algorithmically curated content calculated to elicit your attention is incessantly blasted into your eyeballs from every corner of the page, and the feed is designed to continue to drip feed you this torrent of pain until either you die or navigate away.
  
-These aren't silly things. Very rapidly, almost without us knowing, these silly things became very impactful, very tangible, and very un-silly things.
- 
-This is more traffic than Penn Station will see in [100 years at current levels](https://www.statista.com/statistics/552797/amtrak-ridership-leading-passenger-station/). Even more traffic than a [continental interstate system](https://www.fhwa.dot.gov/policyinformation/tables/02.cfm) could ever cope with. These are very serious, nigh science fiction-esque levels of usership the likes of which humanity has never grappled with.
- 
-The internet has become the fantastical downtown business district of all of humanity. Here we do our learning, shopping, working, and socializing, and as we spend time here and shape it, it too spends time with and shapes us. And *nobody* seems to know what to do about it.
- 
-Yes, the concept of social media as a type of intellectual junk-food has definitely entered the zeitgeist, but I also think that specific symptom is just the very narrow tip of the iceberg.
- 
-![very little thought](https://ephemeralnewyork.files.wordpress.com/2015/11/fillinginthehudson.jpg#float-left)
-We care so much about our public spaces that we've built great walls of civic protection around them. If you want to so much as build a new sidewalk in Greenwich Village you'll need to get an environmental impact study, placate the Landmark Preservation Commission, and navigate a debacle of community board politics that would make Henry Kissinger himself cry.
- 
-Yet if you want to build a service that 2.7 billion people actively build their lives around: by all means, do whatever you want. *Nobody* cares, there's *no* rules.
- 
-And thus the great fantastical downtown business district of humanity is not a City Beautiful -- it's a raging, churning cesspool, and the shaping it's doing to us is not [of the harmonious type](https://en.wikipedia.org/wiki/2021_storming_of_the_United_States_Capitol).
- 
-The average trip to Facebook is *stressful* in the same way a trip through Penn Station is. Your closest friends and family are screaming at each other, algorithmically curated content designed to elicit your attention and your attention alone is blasted into your eyeballs from every corner of the page, and the torrent of pain will just continue to batter you down until either you die or navigate away.
- 
-Yet you can't navigate away. No, it's not that easy anymore. You share pictures with grandma there, you sell your old stuff there, you chat with your old college friends and plan your parties there. It's become a meaningful fixture of your civic infrastructure, and much like Penn Station, you're just going to have to ignore the smells and trudge through it.
- 
-And it isn't the fault of one particular person, or even a group of people. Decry Mark Zuckerberg all you want, but we as a society were totally complicit in whiffing our opportunity to build the City Beautiful. It happened mostly because we didn't see it coming -- we didn't realize we were building a city at all, much less a beautiful one.
- 
-Software was silly, and for the most part just for a lark. Many of us still think this way. But we've whiffed it all the same, and we as a species need to come to grips with the idea that we are not equipped to live and work in a place as raucous, ill-conceived, and all-consuming as our modern mainstream internet. I certainly don't have the answer. I'm not sure anybody does.
+Yet you can't *just* navigate away. No, it's not that easy anymore. You share pictures with grandma there, you sell your old stuff there, you chat with your old college friends and plan your parties there. It's become a meaningful fixture of your civic infrastructure, and much like Penn Station, no matter how many gastly sights and smells you trudge through on a given Tuesday morning, you'll be back that Tuesday night.
+
+We care so much about our public spaces that we've built great walls of civic protection around them. If you want to so much as build a new sidewalk in Greenwich Village you'll need to get an environmental impact study, placate the Landmark Preservation Commission, and navigate a debacle of community board politics that would make Henry Kissinger himself cry. But if you want to build a service that 2.7 billion people actively build their lives around: by all means, do whatever you want. *Nobody* cares, there's *no* rules.
+
+ ![penn station 1910s](https://upload.wikimedia.org/wikipedia/commons/2/25/Excavation_Penn_Station_Ernest_Lawson_1906.jpeg#float-left)
+I don't think it's anyone's fault per say. Decry Big Tech and the naive governments that failed to 'stop them', but we as a society were all equally complicit in whiffing our opportunity to build the City Beautiful. 
+
+I think we (software engineers, governments, users, etc) didn't see it coming. We didn't realize we were building a city at all, much less a beautiful one. Software was silly, and for the most part just for a lark. Many of us still think this way. But somewhere along the line it suddenly became a very unsilly thing and we drove it off the tracks.
+
+I think it's going to take a very long time for our culture to adapt and mature to this new environment we've built for ourselves. From both a cultural and biological perspective we currently are just not equipped to live and work in a place as raucous, ill-conceived, and all-consuming as our modern mainstream internet. I certainly don't know what that maturity will look like, I'm not even sure anybody does right now, I just hope we make it there.
  
 I think the internet can be a wonderful thing, and like most things used in moderation, beneficial and enriching to our lives. I'm just not sure if moderation has been on the table for a while now.
  
