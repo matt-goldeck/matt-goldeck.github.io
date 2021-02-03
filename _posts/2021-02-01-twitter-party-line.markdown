@@ -68,7 +68,7 @@ The `Tweet` component displays the tweet's content and reads it aloud. It slowly
  
 At the turn of the last century, as cities in the United States became congested and squalid, politicians and city planners devised a fusion of politics, philosophy, and urban planning known as the [City Beautiful movement](https://en.wikipedia.org/wiki/City_Beautiful_movement). Its proponents argued that through building cities that were beautiful, pleasant to live in, and conductive to social harmony, we could shape the society that resides in them towards a more harmonious nature.
  
- ![chicago](https://upload.wikimedia.org/wikipedia/commons/b/b1/Delineator-_Jules_Guerin%3B_Architects-_Edward_Herbert_Bennett_and_Daniel_Hudson_Burnham_-_Plan_of_Chicago-_Civic_Center_-_Google_Art_Project.jpg#float-left)
+![penn station 1930s?](https://upload.wikimedia.org/wikipedia/commons/6/60/Penn_Station_interior.jpg#float-left)
 Argue its efficacy all you want, but the base principles are provably true: you feel like a Greek god on a trip through Grand Central Terminal; you feel like a rat scurrying out of Penn Station.
  
 So if we try to make our physical civic spaces beautiful and harmonious, why isn't the internet the same way?
@@ -83,7 +83,7 @@ Let's play a game: pick a FAANG and append 'statistic' to the Google search:
 * Netflix is fast approaching [200 million paying subscribers](https://www.comparitech.com/tv-streaming/netflix-subscribers/).
 
 
-![penn station 1910](https://upload.wikimedia.org/wikipedia/commons/a/ae/Penn_station.png#float-left)
+![penn station 1910](https://upload.wikimedia.org/wikipedia/commons/a/ab/Penn_Station%2C_Interior%2C_Manhattan_1935-1938.jpg#float-left)
 This is more traffic than Penn Station will see in [100 years at current levels](https://www.statista.com/statistics/552797/amtrak-ridership-leading-passenger-station/). Even more traffic than a [continental interstate system](https://www.fhwa.dot.gov/policyinformation/tables/02.cfm) could ever cope with. These are very serious, nigh science fiction-esque levels of usership the likes of which humanity has never grappled with -- and it doesn't seem like we're taking that too seriously.
 
 These aren't silly things. Very rapidly, without us realizing, these silly things became very impactful, very tangible, and very un-silly parts of every person's daily life.
@@ -94,7 +94,7 @@ Yet you can't *just* navigate away. No, it's not that easy anymore. You share pi
 
 We care so much about our public spaces that we've built great walls of civic protection around them. If you want to so much as build a new sidewalk in Greenwich Village you'll need to get an environmental impact study, placate the Landmark Preservation Commission, and navigate a debacle of community board politics that would make Henry Kissinger himself cry. But if you want to build a service that 2.7 billion people actively build their lives around: by all means, do whatever you want. *Nobody* cares, there's *no* rules.
 
- ![penn station 1910s](https://upload.wikimedia.org/wikipedia/commons/2/25/Excavation_Penn_Station_Ernest_Lawson_1906.jpeg#float-left)
+ ![chicago](https://upload.wikimedia.org/wikipedia/commons/b/b1/Delineator-_Jules_Guerin%3B_Architects-_Edward_Herbert_Bennett_and_Daniel_Hudson_Burnham_-_Plan_of_Chicago-_Civic_Center_-_Google_Art_Project.jpg#float-left)
 I don't think it's anyone's fault per say. Decry Big Tech and the naive governments that failed to 'stop them', but we as a society were all equally complicit in whiffing our opportunity to build the City Beautiful. 
 
 I think we (software engineers, governments, users, etc) didn't see it coming. We didn't realize we were building a city at all, much less a beautiful one. Software was silly, and for the most part just for a lark. Many of us still think this way. But somewhere along the line it suddenly became a very unsilly thing and we drove it off the tracks.
