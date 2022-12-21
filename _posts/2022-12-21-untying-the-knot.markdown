@@ -12,10 +12,10 @@ You can find it [here](https://www.nicoleandmatt2022.com).
 
 ## Acceptance Criteria
 1. We needed both:
-    * a mechanism for our guests to RSVP
-    * a repository of information for guests to reference
+    * A mechanism for our guests to RSVP
+    * A repository of information for guests to reference
 2. The record of an RSVP needed to be persisted somewhere
-    * that somewhere had to be reliable -- any loss of data was not an option
+    * That somewhere had to be reliable -- any loss of data was unacceptable
 3. The interface needed to be incredibly frictionless and easy to use. *Incredibly.* Your dog needed to be able to use it.
     * Combine this with a small guest list and authenticity of an RSVP isn't really a concern. This means absolutely no passcodes or emails or any of that crap.
 4. It needed to work across a wide range of devices. Basically any device imaginable. 
