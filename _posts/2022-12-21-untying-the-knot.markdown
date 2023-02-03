@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Untying the Knot"
-date:   2021-02-01 18:00:00 -0500
+date:   2022-12-21 18:00:00 -0500
 categories: project
 ---
 My toxic trait is that I enjoy doing things myself when buying something off the shelf would have taken 10x less time. Thats's why, when it came time to send out invitations for my upcoming wedding, instead of doing the reasonable thing and using [The Knot](www.theknot.com) to manage RSVPs like everybody else, I decided to build a cool little web app.
